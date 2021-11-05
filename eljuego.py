@@ -9,3 +9,7 @@ while intento != numero:
     if intento > numero:
         print( "Demasiado grande.")
         numero_intento = numero_intento +1
+    if intento == numero:
+        print("Enhorabuena, has acertado.")
+        numero_intento = numero_intento +1
+        print("Número de intentos:" +str(numero_intento) )
