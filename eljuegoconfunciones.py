@@ -12,7 +12,12 @@ def OKI (n):
          n= OKI (input ("Caracter no valido:"))
     return n
 def limites (n,MAX):
-     while n<0 or n>MAX:
+    while n<0 or n>MAX:
          n = OKI (input("ERROR:El numero ha de estar entre 0 y "+str(""+str(MAX)+"): ")))
-     return n  
-       
+    return n  
+def sing_plu (f):
+    if f> 1:
+       co= ("intentos")
+    else:
+        co = ("intentos")
+    return co 
