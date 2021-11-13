@@ -24,3 +24,22 @@ def sing_plu (f):
 def paramar(n):
     m=n-1
     return m
+while True:
+    marca= pickle.load(open("mejor_marca", "rb"))
+    print ("ADIVINA EL NUMERO")
+    print ("""En este juego el usuario debe adivinar un numero, escogido al azar por la computadora, entre un rango determinado""")
+    print("")
+    print("""ESCOJA EL NIVEL DE DIFICULTAD 
+Nivel 1:Entre 0 y 100 
+Nivel 2: Entre 0 y 10000
+Nivel 3: Entre 0 y 1000000""")
+    level = OKI(input("Escriba su opcion (de 1 a 3):"))
+    print("")
+    while level != 1 and level !=2 and level != 3:
+        level = OKI (input("Escriba un numero entre 1 y 4:"))
+    MAX = 100** (level +1)    
+    Di = ("0 y" + str(MAX))    
+    numero_elegido = random.randint(0, MAX)
+    intentos = 0
+    tu_numero = limites (OKI(input("Escribe un numero comprendido entre" + Di+ ":")))
+    
