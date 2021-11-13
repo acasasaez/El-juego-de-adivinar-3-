@@ -23,3 +23,6 @@ while intento != numero:
         print("Enhorabuena, has acertado.")
         numero_intento = numero_intento +1
         print("Número de intentos:" +str(numero_intento))
+
+Mi nueva dirección de repositorio es: https://github.com/acasasaez/El-juego-de-adivinar-3-.git
+Mi nuevo código es:
