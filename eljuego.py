@@ -7,11 +7,11 @@ while intento != numero:
         print ("Demasiado pequeño.")
         numero_intento = numero_intento + 1
         intento = int (input("Elija otro numero:"))
-    if intento > numero:
+    elif intento > numero:
         print( "Demasiado grande.")
-        numero_intento = numero_intento +1
+        numero_intento = numero_intento + 1
         intento = int (input("Elija otro numero:"))
-    if intento == numero:
+    else:
         print("Enhorabuena, has acertado.")
-        numero_intento = numero_intento +1
-        print("Número de intentos:" +str(numero_intento) )
+        numero_intento = numero_intento + 1
+        print("Número de intentos:" + str(numero_intento))
