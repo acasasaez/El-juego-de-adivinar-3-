@@ -21,3 +21,6 @@ def sing_plu (f):
     else:
         co = ("intentos")
     return co 
+def paramar(n):
+    m=n-1
+    return m
