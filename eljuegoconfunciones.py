@@ -41,5 +41,22 @@ Nivel 3: Entre 0 y 1000000""")
     Di = ("0 y" + str(MAX))    
     numero_elegido = random.randint(0, MAX)
     intentos = 0
-    tu_numero = limites (OKI(input("Escribe un numero comprendido entre" + Di+ ":")))
+    tu_numero = limites (OKI(input("Escribe un numero comprendido entre" + Di+ ":")), MAX)
+    diferencia = abs (tu_numero - numero_elegido)
+    num_anterior = tu_numero
+    intentos +=1
+    repes = 1
+    while tu_numero != numero_elegido :
+        tu_numero = (limites (OKI (input("Escribe un numero comprendido entre" + Di +":")), MAX))
+        if abs (tu_numero - numero_elegido):
+            if tu_numero !=num_anterior:
+                if (abs(tu_numero -numero_elegido ))<diferencia:
+                    print ("Te estás acercando")
+                else:
+                    print ("Te estás alejando")
+                repes = 1
+            else:
+                repes += 1
+                print("Has introducido el mismo número",repes,"veces seguidas")
+
     
