@@ -66,4 +66,13 @@ Nivel 3: Entre 0 y 1000000""")
             print ("Has perdido, has alcanzado el límite de intentos permitidos")
             print ("La solución era:", numero_elegido)
             break
-        
+    if tu_numero == numero_elegido:
+        print ("Felicidades, lo has logrado")   
+        print ("Número de intentos:",intentos,sing_plu(intentos))
+        posi_marca= paramar (level)
+    if intentos < marca [posi_marca]:
+        marca [posi_marca] = intentos
+        pickle.dump(marca,open("mejor_marca","wb"))
+        print ("¡NUEVO RECORD!")
+    print ("Mejor marca para este nivel:", marca[posi_marca])    
+    
