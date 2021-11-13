@@ -59,4 +59,11 @@ Nivel 3: Entre 0 y 1000000""")
                 repes += 1
                 print("Has introducido el mismo número",repes,"veces seguidas")
 
-    
+        diferencia = abs (tu_numero - numero_elegido)
+        num_anterior = tu_numero
+        intentos += 1
+        if intentos == (MAX/2):
+            print ("Has perdido, has alcanzado el límite de intentos permitidos")
+            print ("La solución era:", numero_elegido)
+            break
+        
